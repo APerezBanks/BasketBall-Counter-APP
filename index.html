@@ -1,0 +1,50 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="newGameBttn">
+            <button  onclick="newGame()"> New Game </button>
+            <p> Everytime you click New Game the score will be stored on the scoreboard</p>
+            <p> And the score will be set back to 0 </p>
+            
+        </div>
+        
+        <div class="container">
+
+            <div class="panel">
+
+                        <h3>HOME</h3>
+                        <h2 class = "score" id="home-score">0</h2>
+
+                        <div>
+                        <button  onclick="homePlusOne()">+1</button> 
+                        <button  onclick="homePlusTwo()">+2</button>
+                        <button  onclick="homePlusThree()">+3</button>
+                        </div>
+            
+            </div>            
+
+                <div class="panel">
+
+                        <h3>GUEST</h3>
+                        <h2 class = "score" id="guest-score">0</h2>
+
+                        <div>
+
+                        <button  onclick="questPlusOne()">+1</button> 
+                        <button  onclick="questPlusTwo()">+2</button>
+                        <button  onclick="questPlusThree()">+3</button>
+                        
+                        </div>  
+                </div>
+        </div>
+
+        <div class="scoreBoard">
+            <h3 id="gameResult-el"> Scoreboard: <br> </h3>
+           
+</div>
+       
+        <script src="index.js"></script>
+    </body>
+</html>
